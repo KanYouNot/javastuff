@@ -1,16 +1,25 @@
-public class worker{
+class Worker{
 	int yearly_salary;
 	String date_of_birth;
 	double hours_worked_per_week;
+
+	public Worker(){
+	}
+
+	public Worker(int yearly_salary, String date_of_birth, double hours_worked_per_week){
+		this.yearly_salary = yearly_salary;
+		this.date_of_birth = date_of_birth;
+		this.hours_worked_per_week = hours_worked_per_week;
+	}
 }
-public class programmer extends worker{
+class Programmer extends Worker{
 	int lines_of_code_written;
 	public void work(){
 		System.out.println("I am programming!");
 	}
 }
 
-public class cleaner extends worker{
+class Cleaner extends Worker{
 	int rooms_cleaned;
 
 	public void work(){
@@ -20,11 +29,11 @@ public class cleaner extends worker{
 
 
 public class inheritance{
-	public static void main(String []args){
-		programmer william = new.programmer;
-		william.work;
+	public static void main(String[] args){
+		Programmer william = new Programmer();
+		william.work();
 
-		cleaner john = new.cleaner;
-		john.work;
+		Cleaner john = new Cleaner();
+		john.work();
 	}
 }
