@@ -32,7 +32,7 @@ class PromptCalculator{
 			case "/":
         double nd1 = n1;
         double nd2 = n2;
-				double oud = ou;
+			  double oud = ou;
         oud = nd1/nd2;
 				System.out.println("The result is "+ oud);
 				break;
